@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width:480px) {
+  /* --------------------------
+  全体構造
+-------------------------- */
+  .content {
+    width: auto;
+  }
+  /* --------------------------
+ ヘッダー
+---------------------------*/
+  header .inner {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  header h1 {
+    position: static; /* 絶対配置を解除 */
+    text-align: center;
+    margin: 20px 0;
+  }
+  header nav.main-nav {
+    display: none;
+  }
+  header .hamburger-button {
+    display: flex;
+    background-color: transparent;
+    border: 1px solid #fff;    
+  }
+  header .hamburger-button svg {
+    width: 10px;
+    height: 10px;
+  }
+  header .hamburger-button path {
+    fill: #fff;
+  }
+  header .hamburger-button path header .hamburger-nav {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /*
+header nav.main-nav {
+  position: static;
+}
+  header .main-nav ul{
+    overflow: hidden;
+    background-color:  var(--main-color);
+  }
+  header .main-nav li{
+    margin-right: 0;
+    width: 25%;
+  }
+  header .main-nav li img{
+    width: 100%;
+    height: auto;
+  }
+*/
+  /* --------------------------
+ メイン
+-------------------------- */
+  main {
+    width: auto;
+    float: none;
+    margin-bottom: 60px;
+  }
+  /*-----------------------------
+  アサイド
+------------------------------*/
+  aside {
+    float: none;
+    margin: 0 auto;
+    width: auto;
+  }
+  aside .banner {
+    text-align: center;
+  }
+  aside .news {
+    margin: 10px;
+  }
+  /*----------------------------
+ フッター
+----------------------------*/
+  footer {
+    height: auto;
+  }
+  footer address {
+    margin-top: 20px;
+  }
+  footer p {
+    margin: 20px 0;
+  }
+  footer br {
+    display: inline; /*スマホ表示用に改行表示させる*/
+  }
+  /*-----------------------------
+トップページ  
+------------------------------*/
+  .home main figure img {
+    width: 100%;
+    height: auto;
+  }
+  /*---------------------------
+  コースページ
+----------------------------*/
+  article {
+    margin: 0 20px;
+  }
+  .course main section {
+    margin: 0 0 20px 0;
+  }
+  .course main figure {
+    float: none;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  .course main p {
+    margin: 0;
+    margin-bottom: 60px;
+  }
+}
